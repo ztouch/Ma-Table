@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Reservation D'Une Table</title>
+		<link rel="stylesheet" type="text/css" href="reserve.css">
+	</head>
+<body>
+
+	<div class="menu">
+<span style="font-size:60px;cursor:pointer;color:red" onclick="openNav()">&#9776;</span>
+		<h2>Reservation</h2>
+		 <div id="myNav" class="overlay">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class = "overlay-content">
+			<a href="restaurant.html"> Decouvrir Menu</a>
+			<a href="reserver.html"> Reserver Table</a>
+			<a href="service.html"> Service Traiteur</a>
+			<a href="salle.html"> Reservation De Salle</a>
+
+		</div>
+		</div>
+	</div>	
+
+	<div id="myreserve">
+	<h2 style="font-size: 40px; margin-left: 40vw;">Reserver Table</h2>
+		<form id = "mytab">
+			<table>
+				<tr>
+					<td>Nom:</td>
+					<td><input type="text" placeholder="Nom" required name="Name"></td>
+				</tr>
+				<tr>
+					<td>Nombres De Personnes:</td>
+					<td><input type="number" placeholder="Nombre de Personnes" required name="People"></td>
+				</tr>
+				<tr>
+					<td>Date:</td>	
+     				<td><input type="datetime-local" placeholder="La Date et l'Heure" required name="date" value="2017-11-16T20:00"></td>
+     			</tr>
+     			<tr>
+     				<td>Restaurants:</td>
+     				<td>
+     					<select>
+     						<option>Choississez Un resto</option>
+     						<option value="LaPirogue">La Pirogue</option>
+     						<option value="LaGare">La Gare</option>
+     						<option value="GruidoS">Gruido'S</option>
+     						<option value="LaTableDeLinda">La Table De Linda</option>
+     						<option value="LaTerrasse">La Terrasse</option>
+     					</select>
+     				</td>
+     			</tr>
+     			<tr>
+     			<td>Traitements Speciales:</td>	
+      				<td><input type="text" placeholder="Message \ Traitements Speciales" required name="Message"></td>
+      			</tr>
+      			<tr>
+      				<td><button type="submit">Soumettre</button></td>
+      			</tr>
+			</table>
+		</form>
+	</div>
+
+	<div class="footerPage" id="footer">
+			<p><small>&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<a href="developerinVogue.org" style="text-decoration: none;"> DeveloperInVogue.org</a></span>
+		</div>
+
+
+
+	  <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+
+
+</html>
